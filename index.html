@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Weather Forecast</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="current-place">
+        <img style="width: 27px; height: 27px;" src="./img/location.png" alt="">
+        <select name="" id="selectcity" onchange="">
+            <option value="Baku">Baku</option>
+            <option value="London">London</option>
+            <option value="Istanbul">Istanbul</option>
+            <option value="Seoul">Seoul</option>
+            <option value="Rome">Rome</option>
+        </select>
+      </div>
+      <div  class="img"><img style="width: 150px; height: 120px;" id="weatherimg" src="//cdn.weatherapi.com/weather/64x64/night/122.png" alt=""></div>
+      <div class="current-deg" id="currentdeg">28</div>
+      <div class="precipitation">
+        <span id="condition">Precipitations</span>
+        <span class="maxmin">
+          <span class="max" id="maximum"></span>
+          <span class="min" id="minimum"></span>
+        </span>
+      </div>
+      <div class="moreInfo">
+        <span id="precip"><img src="./img/noun-rain-2438520 1.png" alt="">6%</span>
+        <span id="humidity"><img src="./img/noun-humidity-151847 1.png" alt=""> 90%</span>
+        <span id="wind"><img src="./img/noun-wind-4507827 1.png" alt=""> 19km/h</span>
+      </div>
+      <div class="weathercontainer">
+        <span class="date">
+          <span>Today</span>
+          <span id="localtime">Mar,9</span>
+        </span>
+        <div class="degcontainer">
+          <div>
+            <span>Moonrise</span>
+            <span  id="moonrise"></span>
+            <span  id="moonset"></span>
+            <span>Moonset</span>
+          </div>
+          <div>
+            <span >Sunrise</span>
+            <span id="sunrise"><img src="./img/noun-wind-4507827 1.png" alt=""></span>
+            <span id="sunset"><img src="./img/noun-rain-2438520 1.png" alt=""></span>
+            <span >Sunset</span>
+          </div>
+        </div>
+      </div>
+      <div class="weekdays"></div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
